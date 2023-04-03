@@ -1,5 +1,5 @@
 nav{
-    height: 70px;
+    height: 10%;
     // display: flex;
     ul{
         list-style: none;
@@ -8,12 +8,11 @@ nav{
         align-items: center;
         justify-content: right;
         width: 100%;
-        // background-color: aqua;
-        padding: 10px 0;
+        padding: 15px 0;
         margin: 0;
         
         li{
-            margin: 0 10px;
+            margin: 0 30px;
         }
     }
 }
