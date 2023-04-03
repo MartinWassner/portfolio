@@ -1,0 +1,19 @@
+nav{
+    height: 70px;
+    // display: flex;
+    ul{
+        list-style: none;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: right;
+        width: 100%;
+        // background-color: aqua;
+        padding: 10px 0;
+        margin: 0;
+        
+        li{
+            margin: 0 10px;
+        }
+    }
+}

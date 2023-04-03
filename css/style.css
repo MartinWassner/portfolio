@@ -1,0 +1,27 @@
+.icons {
+  height: 40px;
+  width: 40px;
+}
+
+nav {
+  height: 70px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 10px;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
