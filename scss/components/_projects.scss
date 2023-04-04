@@ -21,6 +21,7 @@
             grid-template-rows: 100%;
             width: 50%;
             gap: 20px;
+            margin: 2rem 0;
             h2{
                 font-family: 'Kanit', sans-serif;
                 grid-column: 2 / 3;
@@ -33,6 +34,7 @@
             }
             img{
                 height: 235px;
+                width: 458px;
                 border: 2px solid #76279f;
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
