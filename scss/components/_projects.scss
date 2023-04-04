@@ -1,4 +1,5 @@
 .projects{
+    height: 100vh;
     .title{
         font-family: 'Kanit', sans-serif;
         font-weight: 900;
@@ -7,5 +8,35 @@
         margin: 0;
         padding-top: 70px;
         text-align: center;
+    }
+
+    .cardcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        .card{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            width: 50%;
+            gap: 20px;
+            h2{
+                font-family: 'Kanit', sans-serif;
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            p{
+                font-family: 'Kanit', sans-serif;
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            img{
+                height: 235px;
+                border: 2px solid #76279f;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+        }
     }
 }

@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
@@ -35,7 +40,10 @@
                     <a href="#about">
                         <li>About</li>
                     </a>
-                    <li>Projects</li>
+                    <a href="#projects">
+                        <li>Projects</li>
+                    </a>
+                    
                     <li>Contact</li>
                     <li>CV</li>
                 </ul>
@@ -46,9 +54,9 @@
     <div class="about-wrapper">
 
         <div class="about">
-            <p class="title">ABOUT</p>
+            <p class="title"  id="about">ABOUT</p>
             <div class="description">
-                <p class="about-text" id="about">Hello! I am a self-taught web developer looking for opportunities to
+                <p class="about-text">Hello! I am a self-taught web developer looking for opportunities to
                     start my professional career. Although I have no previous work experience, I have acquired skills in
                     programming languages such as HTML, CSS, JS, TS, and I am in the process of learning other languages
                     and tools to expand my skills and knowledge.</p>
@@ -81,8 +89,18 @@
 
     <div class="projects">
         <p class="title">PROJECTS</p>
-        <div class="cardcontainer">
-            <div class="card"></div>
+        <div class="cardcontainer" id="projects">
+            <div class="card">
+                <img src="/imgs/toolbox.png" alt="toolbox miniature" class="animate__animated animate__fadeInLeft">
+                <div class="text animate__animated animate__fadeInRight">
+                    <h2>Toolbox</h2>
+                    <p>Toolbox is a compilation of tiny tools that were too small for an individual page, but relevant enough due to its components and logic behind them.
+                        <br><br>
+                    Note: Toolbox is currently hosted on a free server, be aware that it may take 20-30 seconds to load.
+                    </p>
+                </div>
+                
+            </div>
             <div class="card"></div>
             <div class="card"></div>
         </div>
