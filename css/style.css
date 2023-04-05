@@ -265,6 +265,7 @@ nav ul li {
   font-family: "Kanit", sans-serif;
   padding-left: 10px;
   font-size: 1rem;
+  resize: none;
 }
 .email-form button {
   width: 500px;
@@ -273,9 +274,7 @@ nav ul li {
   font-family: "Kanit", sans-serif;
   border-radius: 10px;
   border: none;
-}
-.email-form button :active {
-  color: #76279f;
+  cursor: pointer;
 }
 
 body {

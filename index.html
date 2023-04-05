@@ -19,9 +19,9 @@
 
     <nav>
         <ul>
-            <li><a href="https://www.linkedin.com/in/martin-wassner-028764239/"><img src="/imgs/free_icon_1.svg"
+            <li><a href="https://www.linkedin.com/in/martin-wassner-028764239/" target="_blank"><img src="/imgs/free_icon_1.svg"
                         alt="linkedin icon" class="icons"></svg></a></li>
-            <li><a href="https://github.com/MartinWassner"><img src="/imgs/free_icon_1 (2).svg" alt="github icon"
+            <li><a href="https://github.com/MartinWassner" target="_blank"><img src="/imgs/free_icon_1 (2).svg" alt="github icon"
                         class="icons"></a></li>
             <li><a href=""><img src="/imgs/free_icon_1 (1).svg" alt="cv icon" class="icons"></a></li>
         </ul>
@@ -30,7 +30,7 @@
     <div class="hello">
         <div class="hello-wrapper">
 
-            <p>Hi! I'm <span>Martin</span></p>
+            <p>Hi &#128075 I'm <span>Martin</span></p>
             <p>A front-end Web Developer</p>
             <div class="tags">
                 <ul>
@@ -40,8 +40,10 @@
                     <a href="#projects">
                         <li>Projects</li>
                     </a>
-
-                    <li>Contact</li>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                    
                     <li>CV</li>
                 </ul>
             </div>
@@ -134,29 +136,29 @@
     </div>
     </div>
     <div class="form-container">
-        <form id="fcf-form-id" class="fcf-form-class email-form" action="https://getform.io/f/3f4eba1d-46f1-4d9c-a677-dafba4ab2f7d" method="POST">
-            <H2>Contact me &#128071</H2>
+        <form class="email-form" action="https://getform.io/f/3f4eba1d-46f1-4d9c-a677-dafba4ab2f7d" method="POST">
+            <H2 id="contact">Contact me &#128071</H2>
             
-            <div class="fcf-form-group name">
+            <div class="name">
                 <label class="fcf-label ">Name</label>
-                <div class="fcf-input-group">
+                <div>
                     <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                 </div>
             </div>
     
-            <div class="fcf-form-group email">
+            <div class="email">
                 <label class="fcf-label">Email address</label>
-                <div class="fcf-input-group">
+                <div>
                     <input type="email" id="Email" name="Email" class="fcf-form-control" required>
                 </div>
             </div>
     
-            <div class="fcf-form-group message">
-                <label class="fcf-label">Leave a message!</label>
-                <div class="fcf-input-group">
+            <div class="message">
+                <label">Leave a message!</label>
+                <div>
                     <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                 </div>
-                <div class="fcf-form-group submit">
+                <div class="submit">
                     <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
                 </div>
             </div>
