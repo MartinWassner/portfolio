@@ -1,10 +1,11 @@
 .projects{
     height: 100vh;
+    background-color: $base-color;
     .title{
         font-family: 'Kanit', sans-serif;
         font-weight: 900;
         font-size: 40px;
-        color: #76279f;
+        color: $purple-shade;
         margin: 0;
         padding-top: 70px;
         text-align: center;
@@ -14,14 +15,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 30px;
+        justify-content: center;
+        margin: 30px 0 0 0;
+        width: 100%;
         .card{
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 100%;
-            width: 50%;
-            gap: 20px;
-            margin: 2rem 0;
+            width: 100%;
+            // gap: 20px;
+            margin: 2rem;
+            justify-items: center;
+
+
+            @media screen and (max-width: 700px){
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                text-align: center;
+            }
             h2{
                 font-family: 'Kanit', sans-serif;
                 grid-column: 2 / 3;
@@ -38,6 +50,7 @@
                 border: 2px solid #76279f;
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
+                
             }
         }
     }

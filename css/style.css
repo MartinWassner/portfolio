@@ -5,6 +5,7 @@
 
 nav {
   height: 10%;
+  background-color: rgb(224, 224, 224);
 }
 nav ul {
   list-style: none;
@@ -26,6 +27,7 @@ nav ul li {
   justify-content: center;
   height: 100%;
   padding: 0;
+  background-color: rgb(224, 224, 224);
 }
 @media screen and (max-width: 700px) {
   .hello {
@@ -83,7 +85,7 @@ nav ul li {
   display: grid;
   grid-template-columns: 50% 50%;
   height: auto;
-  width: 110%;
+  width: 100%;
   padding-bottom: 9rem;
   background: linear-gradient(-45deg, #a852ee, #8c3ce7, #5223d5, #b6bdbb);
   background-size: 400% 400%;
@@ -105,7 +107,7 @@ nav ul li {
   .about-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    height: auto;
+    height: 150%;
     width: 100%;
   }
 }
@@ -122,7 +124,7 @@ nav ul li {
   font-family: "Kanit", sans-serif;
   font-weight: 100;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(224, 224, 224);
   text-align: left justify;
   margin-left: 20px;
 }
@@ -155,6 +157,7 @@ nav ul li {
 
 .projects {
   height: 100vh;
+  background-color: rgb(224, 224, 224);
 }
 .projects .title {
   font-family: "Kanit", sans-serif;
@@ -169,15 +172,25 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  justify-content: center;
+  margin: 30px 0 0 0;
+  width: 100%;
 }
 .projects .cardcontainer .card {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 100%;
-  width: 50%;
-  gap: 20px;
-  margin: 2rem 0;
+  width: 100%;
+  margin: 2rem;
+  justify-items: center;
+}
+@media screen and (max-width: 700px) {
+  .projects .cardcontainer .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
 }
 .projects .cardcontainer .card h2 {
   font-family: "Kanit", sans-serif;
@@ -197,9 +210,78 @@ nav ul li {
   grid-row: 1/2;
 }
 
+.form-container {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: linear-gradient(-45deg, #6b2f9c, #6d31b3, #5223d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: "Kanit", sans-serif;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.email-form {
+  display: grid;
+  height: 95%;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.email-form div {
+  margin: 10px 0;
+}
+.email-form input {
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Kanit", sans-serif;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+.email-form textarea {
+  width: 500px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Kanit", sans-serif;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+.email-form button {
+  width: 500px;
+  margin-top: 20px;
+  height: 30px;
+  font-family: "Kanit", sans-serif;
+  border-radius: 10px;
+  border: none;
+}
+.email-form button :active {
+  color: #76279f;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: rgb(224, 224, 224);
 }
 
 html {

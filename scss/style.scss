@@ -1,12 +1,15 @@
 @import 'base/icons';
+@import 'base/variables';
 @import 'components/header';
 @import 'components/hello';
 @import 'components/about';
 @import 'components/projects';
+@import 'components/emailform';
 
 body{
     margin: 0;
     overflow-x: hidden;
+    background-color: $base-color;
 }
 
 html{
