@@ -2,35 +2,34 @@
     display: grid;
     grid-template-columns: 50% 50%;
     height: auto;
-    width: 100%;
-    
-    
+
+
     padding-bottom: 9rem;
     background: linear-gradient(-45deg, #a852ee, #8c3ce7, #5223d5, #b6bdbb);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 
-    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
         }
+
         50% {
             background-position: 100% 50%;
         }
+
         100% {
             background-position: 0% 50%;
         }
     }
-    
-    @media screen and (max-width: 700px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 150%;
-        width: 100%;
+
+    .about {
+        grid-column: 1 / 2;
+        
     }
-    
+
 
     .title {
         font-family: 'Kanit', sans-serif;
@@ -49,40 +48,46 @@
         color: $base-color;
         text-align: left justify;
         margin-left: 20px;
+
+        @media screen and (max-width: 700px) {
+            font-size: 20px;
+            text-align: justify;
+            padding: 5px;
+            margin: 0;
+        }
     }
 
     .skills {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;        
 
-        
-
-        .logosbot {
-            display: inline-grid;
-            grid-template-columns: 50% 50%;
-            gap: 50px;
-            margin-top: 50px;
-
-            .logo {
-                height: 100px;
-
-            }
-        }
 
         .logos {
-            display: inline-grid;
+            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
             justify-items: center;
             align-items: center;
             margin-top: 50px;
             gap: 50px;
-
+            
             .logo {
                 height: 100px;
             }
+
+            @media screen and (max-width: 700px) {
+                gap: 10px;
+            }
         }
     }
-}
 
+    @media screen and (max-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+        width: auto;
+        font-size: 35px;
+    }
+}

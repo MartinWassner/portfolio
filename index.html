@@ -34,17 +34,19 @@
             <p>A front-end Web Developer</p>
             <div class="tags">
                 <ul>
-                    <a href="#about">
+                    <a href="#about" class="aboutA">
                         <li>About</li>
                     </a>
-                    <a href="#projects">
+                    <a href="#projects" class="projectsA">
                         <li>Projects</li>
                     </a>
-                    <a href="#contact">
+                    <a href="#contact" class="contactA">
                         <li>Contact</li>
                     </a>
-                    
-                    <li>CV</li>
+                    <a href="" class="CVA">
+                        <li>CV</li>
+
+                    </a>
                 </ul>
             </div>
         </div>
@@ -59,7 +61,7 @@
                     start my professional career. Although I have no previous work experience, I have acquired skills in
                     programming languages such as HTML, CSS, JS, TS, and I am in the process of learning other languages
                     and tools to expand my skills and knowledge.</p>
-
+                    <br><br><br>
                 <p class="about-text">I am willing to work hard, learn, and face new challenges. I am looking for a job
                     that allows me to continue growing as a developer, adding value, and learning from other
                     professionals in the industry.</p>
@@ -78,10 +80,9 @@
                 <img src="/imgs/angular_logo_icon_169595.png" alt="" class="logo logo4">
                 <img src="/imgs/figma_logo_icon_170157.png" alt="" class="logo logo5">
                 <img src="/imgs/file_type_typescript_official_icon_130107.png" alt="" class="logo logo6">
-            </div>
-            <div class="logosbot">
                 <img src="/imgs/github-logo_icon-icons.com_73546.png" alt="" class="logo logo7">
                 <img src="/imgs/file_type_git_icon_130581.png" alt="" class="logo logo8">
+                <img src="/imgs/512px-Sass_Logo_Color.svg.png" alt="" class="logo">
             </div>
         </div>
     </div>
@@ -90,24 +91,28 @@
         <p class="title">PROJECTS</p>
         <div class="cardcontainer" id="projects">
             <div class="card">
-                <a href="https://toolboxmw.000webhostapp.com" target="_blank">
+                
                     <img src="/imgs/toolbox.png" alt="toolbox miniature">
-                </a>
+                
                 <div class="text">
                     <h2>Toolbox</h2>
                     <p>Toolbox is a compilation of tiny tools that were too small for an individual page, but relevant
                         enough due to its components and logic behind them.
                         <br><br>
-                        Note: Toolbox is currently hosted on a free server, be aware that it may take 20-30 seconds to
-                        load.
+                        Made only with vanilla HTML5, CSS3 and JavaScript
                     </p>
+                    <div class="card-buttons-container">
+                        <a href="https://toolboxmw.000webhostapp.com" target="_blank" class="card-buttons">Live demo</a>
+                        <a href="https://github.com/MartinWassner/toolbox" target="_blank" class="card-buttons">Source code</a>
+                    </div>    
                 </div>
-
             </div>
+            
+            
             <div class="card">
-                <a href="https://baddesiign.000webhostapp.com" target="_blank">
+                
                     <img src="/imgs/bd.png" alt="bad Design miniature">
-                </a>
+                
                 <div class="text">
                     <h2>Bad Design</h2>
                     <p>BD Was my first project ever, it's like a joke brand that purposely makes ugly t-shirts. It's
@@ -116,6 +121,10 @@
                         Note: BadDesign is currently hosted on a free server, be aware that it may take 20-30 seconds to
                         load. Please wait for the background video to load, it's a heavy file, rookie mistake.
                     </p>
+                    <div class="card-buttons-container">
+                        <a href="https://baddesiign.000webhostapp.com" target="_blank" class="card-buttons">Live demo</a>
+                        <a href="https://github.com/MartinWassner/DesarrolloWebCoder" target="_blank" class="card-buttons">Source code</a>
+                    </div>
                 </div>
 
             </div>
@@ -136,30 +145,33 @@
     </div>
     </div>
     <div class="form-container">
+        <div class="gif">
+            <img src="/imgs/giphy.gif" alt="">
+        </div>
         <form class="email-form" action="https://getform.io/f/3f4eba1d-46f1-4d9c-a677-dafba4ab2f7d" method="POST">
             <H2 id="contact">Contact me &#128071</H2>
             
             <div class="name">
                 <label class="fcf-label ">Name</label>
                 <div>
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    <input type="text" id="Name" name="Name" required>
                 </div>
             </div>
     
             <div class="email">
                 <label class="fcf-label">Email address</label>
                 <div>
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    <input type="email" id="Email" name="Email" required>
                 </div>
             </div>
     
             <div class="message">
                 <label">Leave a message!</label>
                 <div>
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
                 </div>
                 <div class="submit">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    <button type="submit">Send Message</button>
                 </div>
             </div>
     
