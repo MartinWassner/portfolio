@@ -1,13 +1,12 @@
 .projects {
     height: auto;
-    background-color: $base-color;
     width: auto;
 
     .title {
-        font-family: 'Kanit', sans-serif;
+        font-family: $big-font;
         font-weight: 900;
         font-size: 40px;
-        color: $basic-white;
+        color: black;
         margin: 0;
         padding-top: 20px;
         padding-left: 0;

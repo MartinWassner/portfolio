@@ -186,7 +186,7 @@ nav ul li {
   height: auto;
   justify-items: center;
   padding-bottom: 9rem;
-  background: linear-gradient(-45deg, #a852ee, #8c3ce7, #5223d5, #b6bdbb);
+  background: linear-gradient(-45deg, #f0bd5e, #f08b51, #f5c66f, #b6bdbb);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
@@ -211,29 +211,29 @@ nav ul li {
   }
 }
 .about-wrapper .title {
-  font-family: "Kanit", sans-serif;
-  font-weight: 900;
+  font-family: "Anton", sans-serif;
   font-size: 40px;
-  color: white;
+  color: black;
+  letter-spacing: 2px;
   margin: 0;
   padding-top: 70px;
   text-align: center;
 }
 .about-wrapper .about-text {
-  font-family: "Kanit", sans-serif;
-  font-weight: 100;
-  font-size: 30px;
-  color: rgb(224, 224, 224);
-  text-align: left justify;
+  font-family: "Dongle", sans-serif;
+  text-align: justify;
+  font-weight: 600;
+  font-size: 40px;
+  color: black;
   padding: 0;
   margin-left: 20px;
 }
 @media screen and (max-width: 700px) {
   .about-wrapper .about-text {
-    font-size: 20px;
-    text-align: justify;
+    font-size: 40px;
     padding: 5px;
     margin: 0;
+    line-height: 50px;
   }
 }
 .about-wrapper .skills {
@@ -259,6 +259,13 @@ nav ul li {
     width: 100vw;
   }
 }
+.about-wrapper .skills .currently {
+  display: flex;
+  margin-top: 50px;
+}
+.about-wrapper .skills .currently .logo {
+  height: 100px;
+}
 @media screen and (max-width: 700px) {
   .about-wrapper {
     display: grid;
@@ -272,14 +279,13 @@ nav ul li {
 
 .projects {
   height: auto;
-  background-color: rgb(224, 224, 224);
   width: auto;
 }
 .projects .title {
-  font-family: "Kanit", sans-serif;
+  font-family: "Anton", sans-serif;
   font-weight: 900;
   font-size: 40px;
-  color: #FDF3DF;
+  color: black;
   margin: 0;
   padding-top: 20px;
   padding-left: 0;
