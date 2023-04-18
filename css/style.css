@@ -76,7 +76,7 @@ nav ul li {
 .hello {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   justify-content: center;
   height: 100%;
   overflow: hidden;
@@ -142,7 +142,7 @@ nav ul li {
   text-shadow: -5px 4px 1px #F76A31;
   align-self: end;
   justify-self: center;
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 .desc-text {
@@ -151,7 +151,7 @@ nav ul li {
   font-size: 4rem;
   font-style: italic;
   font-weight: 700;
-  justify-self: left;
+  justify-self: center;
   align-self: end;
   text-align: center;
 }
@@ -165,9 +165,10 @@ nav ul li {
 }
 
 .and {
-  align-self: center;
+  align-self: self-start;
   grid-column: 2/3;
   grid-row: 2/3;
+  justify-self: center;
 }
 
 .dev {
@@ -175,7 +176,7 @@ nav ul li {
   grid-row: 2/3;
   padding: 0;
   justify-self: left;
-  align-self: flex-end;
+  align-self: center;
   font-size: 120px;
 }
 
