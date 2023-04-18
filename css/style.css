@@ -4,99 +4,186 @@
 }
 
 nav {
-  height: 10%;
-  background-color: rgb(224, 224, 224);
-  width: 100vw;
+  background-color: #000;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    align-items: center;
+    height: auto;
+    width: 100vw;
+  }
+}
+nav .tags ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .tags ul a,
+nav .tags ul a:link,
+nav .tags ul a:visited {
+  text-decoration: none;
+  color: #FDF3DF;
+  display: flex;
+  position: relative;
+  height: 40px;
+}
+nav .tags ul li {
+  padding: 0 15px;
+  color: #FDF3DF;
+  font-family: "Dongle", sans-serif;
+  font-size: 2em;
+}
+nav .tags ul li ::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #F76A31, #F76A31);
+  /* underline color */
+  background-size: 0 2px;
+  /* vertical size of underline */
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  /* start position of underline */
+  transition: background-size 0.3s ease-in;
+  /* duration and timing style of animation */
+}
+nav .tags ul li :hover::before {
+  background-size: 100% 2px;
 }
 nav ul {
   list-style: none;
   display: flex;
-  height: 50px;
   align-items: center;
-  justify-content: right;
-  width: 100%;
-  padding: 15px 0;
-  margin: 0;
+  justify-content: center;
+}
+nav ul a {
+  text-decoration: none;
+  display: flex;
 }
 nav ul li {
-  margin: 0 30px;
+  padding: 0 15px;
 }
 
 .hello {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
   justify-content: center;
   height: 100%;
-  padding: 0;
-  background-color: rgb(224, 224, 224);
+  overflow: hidden;
 }
 @media screen and (max-width: 700px) {
   .hello {
-    margin: 0;
-    width: 100%;
-  }
-}
-.hello .hello-wrapper {
-  margin-left: 10%;
-}
-.hello .tags ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-@media screen and (max-width: 700px) {
-  .hello .tags ul {
-    list-style: none;
-    gap: 20px;
-    width: auto;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
     display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: auto;
+  }
+  .hello .hi-text {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+    width: 100vw;
+    padding: 0;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
   }
-  .hello .tags ul .aboutA {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .hello .tags ul .projectsA {
-    grid-column: 2/3;
+  .hello .desc-text {
     grid-row: 2/3;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+    width: 100vw;
   }
-  .hello .tags ul .contactA {
-    grid-column: 1/2;
-    grid-row: 2/3;
+  .hello .hello-img {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+    width: 100vw;
+    padding: 0;
+    height: 350px;
+    width: 350px;
   }
-  .hello .tags ul .CVA {
-    grid-column: 2/3;
-    grid-row: 1/2;
+  .hello .and {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+    width: 100vw;
   }
-}
-.hello li {
-  padding: 5px 20px;
-  border: 2px solid #76279f;
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  color: #76279f;
-  margin-right: 1px;
-}
-.hello a {
-  text-decoration: none;
+  .hello .dev {
+    grid-row: 5/6;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+    width: 100vw;
+    text-align: center;
+    font-size: 80px;
+  }
 }
 
-p {
-  font-family: "Kanit", sans-serif;
-  font-size: 52px;
-  font-weight: 800;
+.hi-text {
   margin: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 140px;
+  letter-spacing: 2px;
+  text-shadow: -5px 4px 1px #F76A31;
+  align-self: end;
+  justify-self: center;
+  padding-left: 1em;
 }
-p span {
-  color: #76279f;
+
+.desc-text {
+  margin: 0;
+  font-family: "Dongle", sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  justify-self: left;
+  align-self: end;
+  text-align: center;
+}
+
+.hello-img {
+  margin: 0;
+  padding-right: 3rem;
+  justify-self: right;
+  align-self: center;
+  height: 450px;
+}
+
+.and {
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.dev {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 0;
+  justify-self: left;
+  align-self: flex-end;
+  font-size: 120px;
 }
 
 .about-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
   height: auto;
+  justify-items: center;
   padding-bottom: 9rem;
   background: linear-gradient(-45deg, #a852ee, #8c3ce7, #5223d5, #b6bdbb);
   background-size: 400% 400%;
@@ -117,6 +204,11 @@ p span {
 .about-wrapper .about {
   grid-column: 1/2;
 }
+@media screen and (max-width: 700px) {
+  .about-wrapper .about {
+    width: 100vw;
+  }
+}
 .about-wrapper .title {
   font-family: "Kanit", sans-serif;
   font-weight: 900;
@@ -132,6 +224,7 @@ p span {
   font-size: 30px;
   color: rgb(224, 224, 224);
   text-align: left justify;
+  padding: 0;
   margin-left: 20px;
 }
 @media screen and (max-width: 700px) {
@@ -162,6 +255,7 @@ p span {
 @media screen and (max-width: 700px) {
   .about-wrapper .skills .logos {
     gap: 10px;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 700px) {
@@ -176,18 +270,18 @@ p span {
 }
 
 .projects {
-  height: 100vh;
+  height: auto;
   background-color: rgb(224, 224, 224);
-  display: inline;
-  width: 100vw;
+  width: auto;
 }
 .projects .title {
   font-family: "Kanit", sans-serif;
   font-weight: 900;
   font-size: 40px;
-  color: #76279f;
+  color: #FDF3DF;
   margin: 0;
   padding-top: 20px;
+  padding-left: 0;
   text-align: center;
 }
 .projects .cardcontainer {
@@ -209,6 +303,8 @@ p span {
 @media screen and (max-width: 700px) {
   .projects .cardcontainer .card {
     margin: 0.1rem;
+    align-items: center;
+    justify-items: center;
   }
 }
 .projects .cardcontainer .card img {
@@ -223,7 +319,7 @@ p span {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 70vw;
+    width: 90vw;
   }
 }
 .projects .cardcontainer .card .text .card-buttons-container {
@@ -232,7 +328,7 @@ p span {
   justify-content: space-around;
 }
 .projects .cardcontainer .card .text .card-buttons-container .card-buttons {
-  color: #76279f;
+  color: #FDF3DF;
   text-decoration: none;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
@@ -249,6 +345,7 @@ p span {
     width: 70vw;
     padding: 5px 10px;
     margin: 10px;
+    font-size: 12px;
   }
 }
 .projects .cardcontainer .card .text h2 {
@@ -258,13 +355,14 @@ p span {
   margin: 0;
   margin-left: 20px;
 }
-.projects .cardcontainer .card .text p {
+.projects .cardcontainer .card .text .project-text {
   font-family: "Kanit", sans-serif;
   grid-column: 2/3;
   grid-row: 1/2;
   font-size: 16px;
   font-weight: 200;
   margin-left: 20px;
+  padding: 0;
 }
 @media screen and (max-width: 700px) {
   .projects .cardcontainer .card {
@@ -276,7 +374,7 @@ p span {
     margin: 0;
   }
   .projects .cardcontainer .card img {
-    width: 100vw;
+    width: 80vw;
   }
 }
 
@@ -302,7 +400,7 @@ p span {
     background-position: 0% 50%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   .form-container {
     display: flex;
     align-items: center;
@@ -379,8 +477,8 @@ p span {
 
 body {
   margin: 0;
-  overflow-x: hidden;
-  background-color: rgb(224, 224, 224);
+  background-color: #fdf3df;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23fcc854' fill-opacity='0.25' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 html {

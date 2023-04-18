@@ -1,8 +1,8 @@
 .about-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: auto;
-
+    height: auto;    
+    justify-items: center;
 
     padding-bottom: 9rem;
     background: linear-gradient(-45deg, #a852ee, #8c3ce7, #5223d5, #b6bdbb);
@@ -25,9 +25,13 @@
         }
     }
 
+    
     .about {
         grid-column: 1 / 2;
         
+        @media screen and (max-width: 700px) {
+            width: 100vw;
+        }
     }
 
 
@@ -47,7 +51,8 @@
         font-size: 30px;
         color: $base-color;
         text-align: left justify;
-        margin-left: 20px;
+        padding: 0;
+         margin-left: 20px;
 
         @media screen and (max-width: 700px) {
             font-size: 20px;
@@ -60,7 +65,8 @@
     .skills {
         display: flex;
         flex-direction: column;
-        align-items: center;        
+        align-items: center;   
+        // justify-content: center;     
 
 
         .logos {
@@ -78,6 +84,7 @@
 
             @media screen and (max-width: 700px) {
                 gap: 10px;
+                width: 100vw;
             }
         }
     }

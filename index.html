@@ -11,45 +11,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
 </head>
 
 <body>
 
     <nav>
+        <div class="tags">
+            <ul>
+                <li>
+                    <a href="#about" class="aboutA">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="projectsA">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="contactA">Contact</a>
+                </li>
+            </ul>
+        </div>
         <ul>
-            <li><a href="https://www.linkedin.com/in/martin-wassner-028764239/" target="_blank"><img src="/imgs/free_icon_1.svg"
+            <li class="iconsLi"><a href="https://www.linkedin.com/in/martin-wassner-028764239/" target="_blank"><img src="/imgs/icons8-linkedin.svg"
                         alt="linkedin icon" class="icons"></svg></a></li>
-            <li><a href="https://github.com/MartinWassner" target="_blank"><img src="/imgs/free_icon_1 (2).svg" alt="github icon"
+            <li class="iconsLi"><a href="https://github.com/MartinWassner" target="_blank"><img src="/imgs/icons8-github-384.png" alt="github icon"
                         class="icons"></a></li>
-            <li><a href=""><img src="/imgs/free_icon_1 (1).svg" alt="cv icon" class="icons"></a></li>
+            <li class="iconsLi"><a href=""><img src="/imgs/icons8-cv-100.png" alt="cv icon" class="icons"></a></li>
         </ul>
     </nav>
 
     <div class="hello">
-        <div class="hello-wrapper">
+        
+            <p class="hi-text">HELLO</p>
+            <p class="desc-text">MY NAME IS MARTIN WASSNER</p>
+            <img src="/imgs/fotor_2023-4-18_11_9_50.png" alt="Martin Wassner's profile picture" class="hello-img">
+            <p class="desc-text and">AND I'M A</p>
+            <p class="hi-text dev">WEB DEVELOPER</p>
 
-            <p>Hi &#128075 I'm <span>Martin</span></p>
-            <p>A front-end Web Developer</p>
-            <div class="tags">
-                <ul>
-                    <a href="#about" class="aboutA">
-                        <li>About</li>
-                    </a>
-                    <a href="#projects" class="projectsA">
-                        <li>Projects</li>
-                    </a>
-                    <a href="#contact" class="contactA">
-                        <li>Contact</li>
-                    </a>
-                    <a href="" class="CVA">
-                        <li>CV</li>
-
-                    </a>
-                </ul>
-            </div>
-        </div>
+        
     </div>
 
     <div class="about-wrapper">
@@ -96,7 +98,7 @@
                 
                 <div class="text">
                     <h2>Toolbox</h2>
-                    <p>Toolbox is a compilation of tiny tools that were too small for an individual page, but relevant
+                    <p class="project-text">Toolbox is a compilation of tiny tools that were too small for an individual page, but relevant
                         enough due to its components and logic behind them.
                         <br><br>
                         Made only with vanilla HTML5, CSS3 and JavaScript
@@ -115,7 +117,7 @@
                 
                 <div class="text">
                     <h2>Bad Design</h2>
-                    <p>BD Was my first project ever, it's like a joke brand that purposely makes ugly t-shirts. It's
+                    <p class="project-text">BD Was my first project ever, it's like a joke brand that purposely makes ugly t-shirts. It's
                         useful mostly to see the progress I made along the way
                         <br><br>
                         Note: BadDesign is currently hosted on a free server, be aware that it may take 20-30 seconds to
