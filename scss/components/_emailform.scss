@@ -1,16 +1,14 @@
 .form-container {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 50% 50%;
     height: 70vh;
     align-items: center;
     justify-items: center;
 
-    background: linear-gradient(-45deg, #6b2f9c, #6d31b3, #5223d5);
+    background: linear-gradient(-45deg, #f0bd5e, #f08b51, #f5c66f, #b6bdbb);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    font-family: 'Kanit', sans-serif;
-
-    // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    
 
     @keyframes gradient {
         0% {
@@ -50,13 +48,13 @@
     }
 }
 
-.gif{
+.text-email{
     grid-column: 1 / 2;
+    text-align: center;
+    font-family: $details-font;
+    font-size: 40px;
+
     
-    img{
-        height: 50%;
-        padding-left: 50%;
-    }
 }
 
 .email-form {
@@ -64,19 +62,24 @@
     display: grid;
     height: 95%;
     justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     width: 100%;
     color: white;
 
-
-
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1;
+    font-family: $details-font;
+    color: black;
+    font-weight: 600;
 
-    div {
-        margin: 10px 0;
+
+    h2{
+        font-family: $big-font;
+        color: black;
+        font-weight: 100;
     }
 
     input {
@@ -84,26 +87,28 @@
         height: 30px;
         border-radius: 10px;
         border: none;
-        font-family: 'Kanit', sans-serif;
+        font-family: $details-font;
         padding-left: 10px;
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 
     textarea {
         width: 30rem;
         border-radius: 10px;
         border: none;
-        font-family: 'Kanit', sans-serif;
+        font-family: $details-font;
         padding-left: 10px;
-        font-size: 1rem;
+        font-size: 30px;
         resize: none;
     }
 
     button {
         width: 30rem;
         margin-top: 20px;
-        height: 30px;
-        font-family: 'Kanit', sans-serif;
+        height: auto;
+        font-family: $details-font;
+        font-size: 30px;
+        font-weight: 400;
         border-radius: 10px;
         border: none;
         cursor: pointer;
