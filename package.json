@@ -13,6 +13,7 @@
     "nodemon": "^2.0.22"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "gh-pages": "^5.0.0"
   }
 }
