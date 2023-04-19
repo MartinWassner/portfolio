@@ -31,15 +31,22 @@
         justify-content: center;
         height: auto;
 
-        .gif{
+        .text-email{
             display: none;
         }
+
+        
 
         .email-form{
             display: flex;
             flex-direction: column;
             width: 100vw;
             align-items: center;
+
+            h2{
+                display: flex;
+            }
+
             input, textarea, button{
                 width: 90vw; 
                 margin-bottom: 10px;  
@@ -52,9 +59,7 @@
     grid-column: 1 / 2;
     text-align: center;
     font-family: $details-font;
-    font-size: 40px;
-
-    
+    font-size: 40px;    
 }
 
 .email-form {
@@ -80,6 +85,8 @@
         font-family: $big-font;
         color: black;
         font-weight: 100;
+        display: none;
+        font-size: 30px;
     }
 
     input {

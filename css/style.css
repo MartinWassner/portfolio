@@ -421,7 +421,7 @@ nav ul li {
     justify-content: center;
     height: auto;
   }
-  .form-container .gif {
+  .form-container .text-email {
     display: none;
   }
   .form-container .email-form {
@@ -429,6 +429,9 @@ nav ul li {
     flex-direction: column;
     width: 100vw;
     align-items: center;
+  }
+  .form-container .email-form h2 {
+    display: flex;
   }
   .form-container .email-form input, .form-container .email-form textarea, .form-container .email-form button {
     width: 90vw;
@@ -464,6 +467,8 @@ nav ul li {
   font-family: "Anton", sans-serif;
   color: black;
   font-weight: 100;
+  display: none;
+  font-size: 30px;
 }
 .email-form input {
   width: 30rem;
