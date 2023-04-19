@@ -1,0 +1,82 @@
+
+nav {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+        width: 100vw;}
+
+    .tags{
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            a,
+            a:link,
+            a:visited {
+                text-decoration: none;
+                color: $basic-white;
+                display: flex;
+                position: relative;
+                height: 40px;
+    
+            }
+    
+            li {
+                padding: 0 15px;
+                color: $basic-white;
+                font-family: $details-font;
+                font-size: 2em;
+    
+    
+                ::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    bottom: 0;
+                    background-image: linear-gradient(90deg, $orange, $orange);
+                    /* underline color */
+                    background-size: 0 2px;
+                    /* vertical size of underline */
+                    background-repeat: no-repeat;
+                    background-position: left bottom;
+                    /* start position of underline */
+                    transition: background-size .3s ease-in;
+                    /* duration and timing style of animation */
+                }
+    
+                :hover::before {
+                    background-size: 100% 2px;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            text-decoration: none;            
+            display: flex;            
+        }
+
+        li {
+            padding: 0 15px;                       
+        }
+    }
+
+    
+}

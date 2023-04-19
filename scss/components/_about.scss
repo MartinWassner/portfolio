@@ -1,0 +1,109 @@
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;    
+    justify-items: center;
+
+    padding-bottom: 9rem;
+    background: linear-gradient(-45deg, #f0bd5e, #f08b51, #f5c66f, #b6bdbb);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    
+    .about {
+        grid-column: 1 / 2;
+        
+        @media screen and (max-width: 700px) {
+            width: 100vw;
+        }
+    }
+
+
+    .title {
+        font-family: $big-font;
+        font-size: 40px;
+        color: black;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .about-text {
+        font-family: $details-font;
+        text-align: justify;
+        font-weight: 600;
+        font-size: 40px;
+        color: black;
+        padding: 0;
+        margin-left: 20px;
+
+        @media screen and (max-width: 700px) {
+            font-size: 40px;
+            padding: 5px;
+            margin: 0;
+            line-height: 50px;
+        }
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        // justify-content: center;     
+
+
+        .logos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+            justify-items: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 50px;
+            
+            .logo {
+                height: 100px;
+            }
+
+            @media screen and (max-width: 700px) {
+                gap: 10px;
+                width: 100vw;
+            }
+        }
+
+        .currently{
+            display: flex;
+            margin-top: 50px;
+
+            .logo{
+                height: 100px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+        width: auto;
+        font-size: 35px;
+    }
+}

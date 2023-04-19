@@ -1,0 +1,127 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px 0;
+    align-items: center;
+    justify-items: center;
+
+    background: linear-gradient(-45deg, #f0bd5e, #f08b51, #f5c66f, #b6bdbb);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    .success{
+        background-color: rgb(34, 156, 34);
+    }
+    
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        justify-content: center;
+        height: auto;
+
+        .text-email{
+            display: none;
+        }
+
+        
+
+        .email-form{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            align-items: center;
+
+            h2{
+                display: flex;
+            }
+
+            input, textarea, button{
+                width: 90vw; 
+                margin-bottom: 10px;  
+            }
+        }
+    }
+}
+
+.text-email{
+    grid-column: 1 / 2;
+    text-align: center;
+    font-family: $details-font;
+    font-size: 40px;    
+}
+
+.email-form {
+    grid-column: 2 / 3;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
+    color: white;
+    row-gap: 20px;
+
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: $details-font;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+
+
+    h2{
+        font-family: $big-font;
+        color: black;
+        font-weight: 100;
+        display: none;
+        font-size: 30px;
+    }
+
+    input {
+        width: 30rem;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        font-family: $details-font;
+        padding-left: 10px;
+        font-size: 1.7rem;
+    }
+
+    textarea {
+        width: 30rem;
+        border-radius: 10px;
+        border: none;
+        font-family: $details-font;
+        padding-left: 10px;
+        font-size: 30px;
+        resize: none;
+    }
+
+    button, #button {
+        margin-top: 20px;
+        height: auto;
+        font-family: $details-font;
+        font-size: 30px;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+}
